@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+
+  livelot-admin:
+    container_name: livelot-admin
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/livelot-admin-portal'
+      - '/livelot-admin-portal/node_modules'
+    ports:
+      - 6931:6931
+    environment:
+      - CHOKIDAR_USEPOLLING=true
