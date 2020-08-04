@@ -9,4 +9,4 @@ cd $(dirname "${BASH_SOURCE[0]}")/..
 yarn
 
 $(yarn bin)/tsc --project webpack/ && \
-$(yarn bin)/webpack-dev-server --host=0.0.0.0 --mode=development --config=webpack/webpack.config.js
+$(yarn bin)/webpack-dev-server --host=0.0.0.0 --mode=development --config=dist/webpack.config.js

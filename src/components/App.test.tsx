@@ -6,8 +6,8 @@ import { App } from './App'
 describe(`<App />`, () => {
   it(`renders the App`, () => {
     // Arrange
-    const { getByText, debug } = render(<App />)
-    debug()
+    const { getByText } = render(<App />)
+
     // Act
     const appText = getByText(/^LiveLot Admin Portal$/i)
 
