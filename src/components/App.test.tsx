@@ -1,12 +1,11 @@
 import React from 'react'
-import '@testing-library/jest-dom/extend-expect'
 
 import { render } from '@testing-library/react'
-import { App } from './App'
+import { Basic } from './App.stories'
 describe(`<App />`, () => {
   it(`renders the App`, () => {
     // Arrange
-    const { getByText } = render(<App />)
+    const { getByText } = render(<Basic />)
 
     // Act
     const appText = getByText(/^LiveLot Admin Portal$/i)
