@@ -29,5 +29,9 @@ export = {
   // testRegex: "**/.*(\\.)(test|spec)\\.(ts|tsx)",
 
   // Module file extensions for importing
-  moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"]
+  moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
+
+  setupFilesAfterEnv: [
+    `<rootDir>/config/jest/jest.setup.ts`
+  ]
 };
