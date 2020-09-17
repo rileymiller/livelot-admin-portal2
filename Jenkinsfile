@@ -13,6 +13,9 @@ pipeline {
         }
         stage('Test') {
             steps {
+                sh "Checking current dir"
+                sh "pwd"
+                sh "ls"
                 sh "yarn test"
             }
         }
