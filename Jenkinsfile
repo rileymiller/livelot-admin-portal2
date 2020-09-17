@@ -14,10 +14,5 @@ pipeline {
                 sh "yarn test"
             }
         }
-        stage('Cleanup') {
-            steps {
-                echo "Clean it up"
-            }
-        }
     }
 }
