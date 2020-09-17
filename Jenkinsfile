@@ -11,9 +11,14 @@ pipeline {
                 sh "yarn install"
             }
         }
-        stage('Test Jenkins') {
+        stage('Test') {
             steps {
-                echo 'Hello world! test polling' 
+                sh "yarn test"
+            }
+        }
+        stage('Cleanup') {
+            steps {
+                echo "Clean it up"
             }
         }
     }
