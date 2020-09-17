@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                yarn
+                sh 'yarn'
             }
         }
         stage('Test Jenkins') {
