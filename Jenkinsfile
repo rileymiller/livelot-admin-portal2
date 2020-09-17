@@ -13,10 +13,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh "Checking current dir"
-                sh "pwd"
-                sh "ls"
-                sh "yarn test"
+                sh "./scripts/test.sh"
             }
         }
         stage('Cleanup') {
