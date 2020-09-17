@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash -el
 
 cd $(dirname "${BASH_SOURCE[0]}")/..
 JEST_CONFIG=./config/jest
