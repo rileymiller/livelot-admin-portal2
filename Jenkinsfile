@@ -9,14 +9,11 @@ pipeline {
         stage('Build') {
             steps {
                 sh "yarn install"
-                sh "ls"
-                sh "ls scripts"
-                sh "yarn test"
             }
         }
         stage('Test') {
             steps {
-                sh "./scripts/test.sh"
+                sh "yarn test""
             }
         }
         stage('Cleanup') {

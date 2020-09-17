@@ -1,6 +1,6 @@
-#!/bin/bash -el
+#!/bin/bash
 
-cd $(dirname "${BASH_SOURCE[0]}")/..
+#cd $(dirname "${BASH_SOURCE[0]}")/..
 JEST_CONFIG=./config/jest
 JEST_BUILD_PROJECT=${JEST_CONFIG}/tsconfig.json
 
