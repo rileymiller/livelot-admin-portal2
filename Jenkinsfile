@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'yarn'
+                sh "npm install -g yarn"
+                sh "yarn install"
             }
         }
         stage('Test Jenkins') {
