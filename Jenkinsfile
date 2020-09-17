@@ -10,6 +10,7 @@ pipeline {
             steps {
                 sh "yarn install"
                 sh "ls"
+                sh "ls scripts"
                 sh "yarn test"
             }
         }
