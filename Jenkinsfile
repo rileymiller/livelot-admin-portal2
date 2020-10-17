@@ -12,7 +12,6 @@ pipeline {
         stage('Test') {
             steps {
                 sh "yarn test"
-                echo "test pull 2"
             }
         }
     }
