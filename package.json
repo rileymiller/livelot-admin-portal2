@@ -1,9 +1,9 @@
 {
-  "name": "livelot-admin-portal",
-  "version": "0.0.0",
+  "name": "livelot-admin-portal2",
+  "version": "0.0.1",
   "description": "LiveLot's Admin Portal",
   "main": "index.ts",
-  "repository": "git@github.com:maddiearogers/livelot-admin-portal.git",
+  "repository": "git@github.com:rileymiller/livelot-admin-portal2.git",
   "author": "Riley Miller <rmllr000@gmail.com>",
   "license": "MIT",
   "private": false,
